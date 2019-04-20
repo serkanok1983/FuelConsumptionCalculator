@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    tools:context="com.serkanok.fuelconsumptioncalculator.AnaEkran">
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/menzil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/baslik"
+        android:layout_below="@+id/baslik"
+        android:layout_marginTop="54dp"
+        android:text="@string/menzil" />
+
+    <TextView
+        android:id="@+id/yakit_tutar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menzil"
+        android:layout_below="@+id/menzil"
+        android:layout_marginTop="44dp"
+        android:text="@string/yakit_tutar" />
+
+    <TextView
+        android:id="@+id/km_yakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/yakit_tutar"
+        android:layout_below="@+id/yakit_tutar"
+        android:layout_marginTop="94dp"
+        android:text="@string/km_yakit" />
+
+    <EditText
+        android:id="@+id/menzil_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/menzil"
+        android:layout_alignBottom="@+id/menzil"
+        android:layout_alignParentRight="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/yakit_tutar_input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yakit_tutar"
+        android:layout_alignBottom="@+id/yakit_tutar"
+        android:layout_alignParentRight="true"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/km_yakit_output"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yakit_tutar_input"
+        android:layout_marginTop="64dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@android:dimen/notification_large_icon_width"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/icon" />
+
+</RelativeLayout>
